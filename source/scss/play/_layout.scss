@@ -1,0 +1,55 @@
+//----------------------------------------------------------------------------------------------------------------------
+// Default
+.container--outer {
+	& {
+		@include container-fixed;
+		max-width: 100%;
+	}
+
+	& + .container--outer {
+		margin-top: 20px;
+	}
+}
+
+.container--inner {
+	max-width: 100%;
+}
+
+.container--default {
+	& {
+		padding: 10px 15px;
+	}
+
+	& > *:first-child {
+		margin-top: 0;
+	}
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+// Abstaende
+.container--space-top-none {
+	padding-top: 0;
+}
+
+.container--space-bottom-none {
+	padding-bottom: 0;
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+// Colors
+.container--white {
+	background: #fff;
+}
+
+.container--blue {
+	background: $brand-primary;
+	color: $white;
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+// Responsive
+@media (min-width: $screen-md-min) {
+	.container--outer {
+		width: $container-md;
+	}
+}
