@@ -43,8 +43,8 @@
 
 //----------------------------------------------------------------------------------------------------------------------
 // Responsive
-@media (min-width: map-get($grid-breakpoints, lg)) {
+@media (min-width: map-get($grid-breakpoints, xl)) {
 	.container--outer {
-		width: map-get($container-max-widths, lg);
+		width: map-get($container-max-widths, xl);
 	}
 }
