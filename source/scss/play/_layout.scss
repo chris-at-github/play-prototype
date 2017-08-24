@@ -2,7 +2,7 @@
 // Default
 .container--outer {
 	& {
-		@include container-fixed;
+		@include make-container();
 		max-width: 100%;
 	}
 
@@ -38,18 +38,13 @@
 //----------------------------------------------------------------------------------------------------------------------
 // Colors
 .container--white {
-	background: #fff;
-}
-
-.container--blue {
-	background: $brand-primary;
-	color: $white;
+	background: $white;
 }
 
 //----------------------------------------------------------------------------------------------------------------------
 // Responsive
-@media (min-width: $screen-md-min) {
+@media (min-width: map-get($grid-breakpoints, lg)) {
 	.container--outer {
-		width: $container-md;
+		width: map-get($container-max-widths, lg);
 	}
 }
