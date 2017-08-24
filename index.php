@@ -13,8 +13,23 @@
 </head>
 <body>
 
+<div id="header" class="container--outer">
+	<div class="container--inner">
+		<div class="row">
+			<div id="logo" class="col-sm-3"><div class="section">Logo</div></div>
+			<div id="search" class="col-sm"><div class="section">Search</div></div>
+			<div class="col-sm-3 d-sm-flex justify-content-sm-end">
+				<div id="language" class="section">Language</div>
+				<div id="login" class="section">Login</div>
+			</div>
+		</div>
+
+		<div id="navigation"><div class="section">Navigation</div></div>
+	</div>
+</div>
+
 <div class="container--outer">
-	<div class="container--inner container--default container--space-bottom-none">
+	<div class="container--inner container--default">
 		<p>
 			Brownie biscuit cake cake. Lemon drops wafer fruitcake marzipan sweet chocolate. Oat cake macaroon marshmallow
 			jelly-o cheesecake wafer cake jujubes sweet roll. Bonbon pudding sweet roll carrot
