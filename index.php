@@ -16,15 +16,15 @@
 <div id="header" class="container--outer">
 	<div class="container--inner">
 		<div class="row">
-			<div id="logo" class="col-sm-3"><div class="section">Logo</div></div>
-			<div id="search" class="col-sm"><div class="section">Search</div></div>
+			<div class="col-sm-3"><div id="header-logo">Logo</div></div>
+			<div id="header-search" class="col-sm">Search</div>
 			<div class="col-sm-3 d-sm-flex justify-content-sm-end">
-				<div id="language" class="section">Language</div>
-				<div id="login" class="section">Login</div>
+				<?php include('./source/partials/header/language.php'); ?>
+				<?php include('./source/partials/header/login.php'); ?>
 			</div>
 		</div>
 
-		<div id="navigation"><div class="section">Navigation</div></div>
+		<?php include('./source/partials/header/navigation.php'); ?>
 	</div>
 </div>
 

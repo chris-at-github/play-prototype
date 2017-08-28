@@ -1,6 +1,5 @@
 #header {
-	& {
-		padding: 10px; 
+	.container--inner { 
 		background: #fff;
 	}
 
@@ -8,4 +7,62 @@
 		// border: 1px solid #fff;
 		background: #ccc;
 	}
+}
+
+#header-language {
+	& {
+		position: relative;
+		border-left: 2px solid $body-bg;
+	}
+
+	.header-language--current {
+		width: 45px;
+		min-height: 45px;
+		line-height: 45px;
+		font-weight: 500;
+		color: $gray-500;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+#header-login {
+	& {
+		position: relative;
+		border-left: 2px solid $body-bg;
+	}	
+
+	.header-login--current {
+		width: 45px;
+		min-height: 45px;
+		line-height: 45px;
+		font-weight: 500;
+		color: $gray-500;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+#header-logo {
+	padding: 0 15px;
+	line-height: 45px;
+	font-weight: 500;
+	color: $gray-500;
+	text-transform: uppercase;
+}
+
+#header-search {
+	line-height: 45px;
+	font-weight: 500;
+	color: $gray-500;
+	text-transform: uppercase;
+}
+
+#navigation {
+	padding: 0 15px;
+	line-height: 45px;
+	border-top: 2px solid $body-bg;
+	font-weight: 500;
+	color: $gray-500;
+	text-transform: uppercase;
 }
